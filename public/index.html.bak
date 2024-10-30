@@ -21,12 +21,7 @@
   integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
   crossorigin="anonymous"
 />
-<script type="text/javscript">
-  var script = document.CreateElement("script");
-
-</script>
-
-<!--<script type="text/javascript" src="https://js-cdn.dynatracelabs.com/jstag/145e049b9b1/bf39977uaa/bc28c8d1d1c45051_complete.js" crossorigin="anonymous"></script>-->
+<script type="text/javascript" src="https://js-cdn.dynatracelabs.com/jstag/145e049b9b1/bf39977uaa/bc28c8d1d1c45051_complete.js" crossorigin="anonymous"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

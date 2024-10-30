@@ -7,31 +7,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import LastSales from './component/LastSales';
 import { Component, useState, useEffect  } from 'react';
 import AddProduct from './component/AddProduct';
-import ListProduct from './component/ListProduct';
-import Login from './component/login';
 
 function App() {
 	
-    const [component,setComponent] = useState(0);
-    const [status,setStatus] = useState(false)
+	
+	useEffect(() => {
+		const script = document.createElement("script");
 
+		script.src = "https://js-cdn.dynatracelabs.com/jstag/145e049b9b1/bf39977uaa/bc28c8d1d1c45051_complete.js";
+		script.async = true;
+
+		document.body.appendChild(script);
+   
+  });
+
+
+    const [component,setComponent] = useState(0);
 
     function switchComponent(){
-
-      if (status){
-        switch(component){
-          case 1:
-              return <AddProduct/>
-            case 2:
-              return <ListProduct/>
-          default: 
-            return <LastSales/>
-          
-        }
-    }else{
-      return <Login setStatus={setStatus}/>
+      switch(component){
+        case 1:
+            return <AddProduct/>
+        default: 
+          return <LastSales/>
+        
+      }
     }
-  }
 
   return (
     <>
